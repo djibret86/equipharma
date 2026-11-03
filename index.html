@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>EQUIPHARMA</title>
+<meta name="description" content="Trouvez les équivalents d'un médicament et comparez les prix en Côte d'Ivoire. Base ouverte et collaborative.">
+<meta name="theme-color" content="#0e8a6b">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png" type="image/png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+  <header class="top">
+    <div class="bar">
+      <button class="icon-btn" id="back" type="button" aria-label="Retour" hidden>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+      </button>
+      <button class="brand" id="home" type="button" aria-label="Accueil EQUIPHARMA">
+        <span class="mark" aria-hidden="true">E</span>
+        <span class="brand-txt"><span class="brand-name">EQUIPHARMA</span><span class="brand-sub">Médicaments &amp; équivalents · Côte d'Ivoire</span></span>
+      </button>
+      <button class="icon-btn" id="about" type="button" aria-label="À propos">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>
+      </button>
+    </div>
+    <label class="search" for="q">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3-3"/></svg>
+      <input id="q" type="search" placeholder="Nom du médicament ou molécule…" autocomplete="off" spellcheck="false" enterkeyhint="search">
+      <button class="clear" id="clear" type="button" aria-label="Effacer la recherche" hidden>×</button>
+    </label>
+  </header>
+  <main class="view" id="view" aria-live="polite">
+    <p class="loading">Chargement de la base…</p>
+  </main>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
